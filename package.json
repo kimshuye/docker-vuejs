@@ -1,0 +1,81 @@
+{
+  "name": "docker-vuejs",
+  "description": "A docker image to run vue.js projects.",
+  "author": "Timo Mika Gläßer <github@scale.io>",
+  "private": true,
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "prod": "node build/prod-server.js",
+    "build": "rimraf dist && webpack --progress --hide-modules --config build/webpack.prod.conf.js",
+    "test": "karma start build/karma.conf.js --single-run"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "moment": "*",
+    "medium-editor": "*",
+    "ace-builds": "*",
+    "async": "*",
+    "chart.js": "*",
+    "keyboardjs": "*",
+    "connect-history-api-fallback": "~1.3.0",
+
+    "vue": "~2.0.1",
+    "vue-router": "~2.0.0",
+    "vue-loader": "~9.5.1",
+    "vue-html-loader": "~1.2.3",
+    "vue-template-compiler": "~2.0.1",
+    "vue-style-loader": "~1.0.0",
+    "vue-hot-reload-api": "~2.0.6",
+
+    "babel-core": "~6.22.1",
+    "babel-loader": "~6.2.10",
+    "babel-plugin-transform-runtime": "~6.22.0",
+    "babel-preset-es2015": "~6.22.0",
+    "babel-preset-stage-2": "~6.22.0",
+    "babel-runtime": "~6.22.0",
+
+    "eslint": "~3.14.1",
+    "eslint-friendly-formatter": "~2.0.7",
+    "eslint-loader": "~1.6.1",
+
+    "css-loader": "~0.26.1",
+    "file-loader": "~0.9.0",
+    "inject-loader": "~2.0.1",
+    "json-loader": "~0.5.4",
+    "url-loader": "~0.5.7",
+    "sass-loader": "~4.1.1",
+
+    "event-emitter": "~0.3.4",
+
+    "eventsource-polyfill": "~0.9.6",
+
+    "express": "~4.14.0",
+
+    "extract-text-webpack-plugin": "~1.0.1",
+
+    "function-bind": "~1.1.0",
+
+    "html-webpack-plugin": "*",
+
+    "js-cookie": "~2.1.3",
+
+    "karma": "~1.4.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-phantomjs-launcher": "~1.0.2",
+    "karma-spec-reporter": "~0.0.26",
+    "karma-webpack": "~2.0.2",
+
+    "jasmine-core": "~2.5.2",
+
+    "phantomjs-prebuilt": "~2.1.14",
+
+    "rimraf": "~2.5.4",
+
+    "node-sass": "~4.4.0",
+
+    "webpack": "~1.14.0",
+    "webpack-dev-middleware": "~1.9.0",
+    "webpack-hot-middleware": "~2.15.0"
+  }
+}
