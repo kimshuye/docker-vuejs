@@ -2,5 +2,6 @@
 
 
 ```bash
-docker run -d --restart always -p 8080:8080 -v FOLDER_CONTAINING_VUEJS_FILES:/vuejs/src docker-vuejs:latest
+export VUEPRJ="/home/me/projects/vue"
+docker run -d --restart always -p 8080:8080 -v $(VUEPRJ):/vuejs/src docker-vuejs:latest
 ```
