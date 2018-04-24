@@ -10,7 +10,7 @@ module.exports = {
         filename: '[name].js'
     },
     resolve: {
-        extensions: ['', '.js', '.vue'],
+        extensions: ['', '.js', '.css', '.vue'],
         alias: {
             'src': path.resolve(__dirname, '../src'),
             'npm': path.resolve(__dirname, '../node_modules'),
